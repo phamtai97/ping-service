@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option go_package = "pingservice.proto";
+package service.api.proto;
+
+message Ping {
+    int64 timestamp = 1;
+}
+
+message Pong{
+    int64 timestamp = 1;
+    string serviceName = 2;
+}
+
+service PingService {
+     // ping-pong
+     rpc ping (Ping) returns (Pong) {
+    }
+}
