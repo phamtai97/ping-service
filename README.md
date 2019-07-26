@@ -1,7 +1,7 @@
 # Ping service gRPC
 
 <div align="center">
-  <img src="./images/p.png" width="100">
+  <img src="./images/p.png" width="130">
 </div>
 
 ## Overview
@@ -18,7 +18,7 @@ Using the [gRPC](https://github.com/grpc/grpc-go) framework to build a simple **
 
 ## Installation
 - Install [Golang](https://golang.org/doc/install).
-- Install [Locust](https://docs.locust.io/en/latest/installation.html)
+- Install [Locust](https://docs.locust.io/en/latest/installation.html).
 
 ## Build
 
