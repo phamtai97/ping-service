@@ -1,5 +1,9 @@
 # Ping service gRPC
 
+<div align="center">
+  <img src="./images/p.png" width="100">
+</div>
+
 ## Overview
 Using the [gRPC](https://github.com/grpc/grpc-go) framework to build a simple **ping-service** that supports ping pong API. Then using the [locust](https://locust.io/) and [boomer](https://github.com/myzhan/boomer) to benchmark ping-service. In addition the ping-service is implemented in [golang](https://golang.org/) language.
 
