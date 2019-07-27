@@ -46,7 +46,7 @@ $ chmod +x run_locust.sh
 $ cd ./cmd/server
 
 # build service
-$ go build server
+$ go build
 
 # run service
 $ ./server
