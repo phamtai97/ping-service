@@ -1,4 +1,4 @@
 GRPCPort: 10002
-GRPCHost: "ping-service-server"
+GRPCHost: "localhost"
 PoolSize: 1000
 TimeOut:  120
