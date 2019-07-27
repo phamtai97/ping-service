@@ -24,7 +24,7 @@ Using the [gRPC](https://github.com/grpc/grpc-go) framework to build a simple **
 
 ```sh
 #clone project
-$ git clone 
+$ git clone https://github.com/phamtai97/ping-service.git
 ```
 
 ## Run
