@@ -1,4 +1,4 @@
-# Ping service gRPC
+# Ping service gRPC with Golang
 
 <div align="center">
   <img src="./images/p.png" width="130">
