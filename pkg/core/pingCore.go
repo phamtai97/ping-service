@@ -16,11 +16,11 @@ func NewPingCore() (PingCore, error) {
 	return &PingCoreImplement{}, nil
 }
 
-func (core *PingCoreImplement) getTimestame() int64 {
+func (core *PingCoreImplement) getTimestamp() int64 {
 	return time.Now().UnixNano() / int64(time.Millisecond)
 }
 
 //Ping ping api
 func (core *PingCoreImplement) Ping(timestamp int64) int64 {
-	return core.getTimestame()
+	return core.getTimestamp()
 }

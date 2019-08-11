@@ -15,6 +15,7 @@ require (
 	github.com/prometheus/common v0.4.0
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/viper v1.4.0
+	github.com/theodesp/blockingQueues v0.0.0-20171230192932-26531ad66e7c // indirect
 	github.com/zeromq/gomq v0.0.0-20181008000130-95dc37dee5c4 // indirect
 	google.golang.org/grpc v1.21.0
 )

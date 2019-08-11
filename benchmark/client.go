@@ -66,14 +66,19 @@ func (manager *ManagerClient) NewClient() *ClientPing {
 	}
 }
 
-func (c *ClientPing) getTimestame() int64 {
+//ClosePool close pool
+func (manager *ManagerClient) ClosePool() {
+	manager.pool.Close()
+}
+
+func (c *ClientPing) getTimestamp() int64 {
 	return time.Now().UnixNano() / int64(time.Millisecond)
 }
 
 //Ping ping api
 func (c ClientPing) Ping() (*pingservice_proto.Pong, error) {
 	msgPing := &pingservice_proto.Ping{
-		Timestamp: c.getTimestame(),
+		Timestamp: c.getTimestamp(),
 	}
 
 	return c.client.Ping(c.ctx, msgPing)

@@ -66,5 +66,13 @@ func (boomerClient *BoomerClient) createTask(nameTask string, weight int) *boome
 
 //RunTask run task
 func (boomerClient *BoomerClient) RunTask(tasks []*boomer.Task) {
+	boomer.Events.Subscribe("boomer:hatch", func(workers, hatchRate int) {
+		log.Info("The master asks me to spawn ", workers, " goroutines with a hatch rate of", hatchRate, "per second.")
+	})
+
+	boomer.Events.Subscribe("boomer:quit", func() {
+		log.Info("Boomer is quitting now.")
+		managerClient.ClosePool()
+	})
 	boomer.Run(tasks...)
 }
