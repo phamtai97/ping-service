@@ -76,7 +76,7 @@ func (c *ClientPing) getTimestamp() int64 {
 }
 
 //Ping ping api
-func (c ClientPing) Ping() (*pingservice_proto.Pong, error) {
+func (c *ClientPing) Ping() (*pingservice_proto.Pong, error) {
 	msgPing := &pingservice_proto.Ping{
 		Timestamp: c.getTimestamp(),
 	}
@@ -85,6 +85,6 @@ func (c ClientPing) Ping() (*pingservice_proto.Pong, error) {
 }
 
 //Close close conn
-func (c ClientPing) Close() error {
+func (c *ClientPing) Close() error {
 	return c.conn.Close()
 }
